@@ -13,8 +13,14 @@ public struct Validator{
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
-    public static func addValues(_num1 : Int, _num2 : Int){
+    
+     static func addValues(_num1 : Int, _num2 : Int){
         print("SUM :",_num1 + _num2)
     }
+    static func subtractValues(_num1 : Int, _num2 : Int){
+        print("SUM :",_num1 - _num2)
+    
+    }
+    
 }
 
